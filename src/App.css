@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
@@ -51,6 +52,32 @@ h6 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.5em;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #ff960b;
+  color: #fff;
+}
+
+.nav-styles {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn-primary {
@@ -133,7 +160,7 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 210px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -179,16 +206,16 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.banner h1 {
+.banner .banner__title {
   font-size: 2.5rem;
 }
-.banner div {
+.banner .banner__line {
   width: 10rem;
   height: 5px;
   background: var(--primaryColor);
   margin: 1.7rem auto;
 }
-.banner p {
+.banner .banner__text {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -214,13 +241,13 @@ h6 {
   text-align: center;
   margin-bottom: 4rem;
 }
-.section-title h4 {
+.section-title__title {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
-.section-title div {
+.section-title__line {
   width: 5rem;
   height: 5px;
   margin: 0 auto;
@@ -231,8 +258,6 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
-}
-.services {
   background: var(--darkGrey);
   text-align: center;
 }
@@ -244,16 +269,17 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-.service span {
+.service__icon {
   display: inline-block;
   color: var(--primaryColor);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
-.services h6 {
+.service__title {
+  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
 }
-.services p {
+.service__text {
   width: 80%;
   margin: 0 auto;
 }
@@ -265,7 +291,7 @@ h6 {
 }
 
 @media screen and (min-width: 1200px) {
-  .services p {
+  .service__text {
     width: 100%;
   }
 }
@@ -434,11 +460,11 @@ h6 {
   }
 }
 /* end of single room*/
-/* roomlist */
-.roomslist {
+/* room-list */
+.rooms-list {
   padding: 5rem 0;
 }
-.roomslist-center {
+.rooms-list_center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -448,18 +474,18 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .rooms-list_center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .rooms-list_center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end of roomlist */
-/*  rooms fitler*/
+/* end of room-list */
+/*  rooms filter*/
 .filter-container {
   padding: 5rem 0;
 }
